@@ -1,0 +1,212 @@
+.header {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow:2px 2px 0 black;
+    /* -webkit-text-stroke: 1px black; */
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #d90007;
+}
+
+
+.session-input-boxes{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.login-container{
+  flex-flow: column, wrap;
+  width: 300px;
+  margin-top: 50px;
+}
+
+.signup-container{
+  flex-flow: column, wrap;
+  width: 300px;
+  margin-top: 150px;
+}
+
+.login-button{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #d90007;
+  font-size: 22px;
+  height: 40px;
+  width: 300px;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 12px;
+  border: 1px solid #7c1014;
+}
+
+.login-button:hover {
+  background-color: #ec0008;
+}
+
+.title {
+  font-size: 22px;
+  color: #d32323;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+}
+
+.demo-button{
+  background-color: #3c5da0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  height: 40px;
+  width: 300px;
+  padding: 5px 0px;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 12px;
+  border: 1px solid #1f3663;
+  cursor: pointer;
+}
+
+.demo-button:hover{
+  background-color: #446ab6;
+}
+
+.legal{
+  color: #333;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.legal-left {
+  color: #333;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.login-subheading{
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signup-link {
+  color: #0073bb;
+}
+
+.forgot-link-div {
+  color: #0073bb;
+  font-size: 12px;
+  text-align: right;
+}
+
+.forgot-link {
+  color: #0073bb;
+  font-size: 12px;
+}
+
+.hr-line {
+
+  border-top: 1px solid #ccc;
+
+}
+
+.or-separator{
+  margin-bottom: 10px;
+  color: grey;
+  padding: 10px;
+}
+
+.session-input-names{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.session-first-name{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 147.5px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.session-last-name{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 147.5px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.session-errors {
+  margin-top: 5px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.session-errors li{
+  line-height: 20px;
+  background-color: #fcd6d3;
+}
+
+
+
+.body-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  width: 1300px;
+  margin-bottom: 250px;
+}
+
+.login-tiny-text{
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #999;
+  font-weight: normal;
+  text-align: right;
+  width: 300px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.login-tiny-text a{
+  color: #0073bb;
+}
+
+.user-login{
+  flex: 1;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.session-img {
+  flex: 1;
+  width:400px;
+  height:350px;
+  background: url(https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/signup_illustration.png);
+  background-repeat: no-repeat;
+  
+}
