@@ -1,0 +1,333 @@
+.home-page{
+  height: 570px;
+}
+
+.home-main-section::after {
+  content: "";
+  background: url(https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/homepage1.jpg);
+  filter: brightness(90%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  min-width: 1020px;
+}
+
+.home-main-nav-bar{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.home-nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 30px;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+
+}
+
+.nav-bar-left{
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  align-items: center;
+}
+
+
+.home-underline {
+  padding-bottom: 8px;
+  margin-top: 8px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.home-underline:hover{
+  border-bottom: 2px solid white;
+}
+
+.home-underline:active {
+  color: rgb(160, 160, 160);
+}
+
+.home-signup{
+  border: 2px solid white;
+  padding: 7px 24px 8px;
+  border-radius: 4px;
+}
+
+.home-signup:hover{
+  background-color: white;
+  color: rgb(95, 95, 95)
+}
+
+.home-signup:active{
+  background-color: white;
+  color: rgb(168, 168, 168)
+}
+
+.nav-bar-right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+#logout {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.home-main-inner{
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px 0px 0px;
+  height: 325px;
+  margin: 0 auto;
+}
+
+.home-logo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 70px;
+    line-height: 75px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+
+}
+
+
+.home-category-navigation-bar{
+  color: white;
+  font-weight: bold;
+}
+
+.nav-underline {
+  padding-bottom: 8px;
+  margin-top: 8px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-underline:hover {
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.home-page-lower-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F5F5F5;
+}
+
+.home-lower-title{
+  margin: 20px 0 30px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d32323;
+}
+
+.home-lower-categories-container{
+  height: 300px;
+  width: 960px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-drink-category{
+  width: 216px;
+  height: 250px;
+  border: 1px solid rgb(207, 207, 207);
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.home-drink-category:hover{
+  box-shadow: 2px 2px 15px #bdbdbd;
+}
+
+.home-drink-category:hover > div {
+  color: #0073bb;
+}
+
+.home-category-text{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.home-all-picture{
+  background: url(https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/shops.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -30px;
+  height: 85%;
+}
+
+.home-CF-picture{
+  background: url("https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/rice.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 85%;
+}
+
+.home-SUSHI-picture{
+  background: url(https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/sushi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85%;
+}
+
+.home-BBQ-picture{
+  background: url(https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/BBQ.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85%;
+}
+
+.home-page-footer{
+  height: 200px;
+  background: #F5F5F5;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-page-footer-title{
+  color: #D32223;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-page-footer-links{
+  font-size: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.home-page-footer-links > a:hover{
+  color: #D32223;
+}
+
+.home-page-lower-2 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page-categories-box{
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 4px;
+  height: 135px;
+  width: 216px;
+  padding: 17px 11px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  background: white;
+  transition: all 100ms ease-in-out;
+}
+
+.home-page-categories-box:hover{
+  border-color: #0073bb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+  color: #0073bb;
+  cursor: no-drop;
+}
+
+.category-background{
+  height: 72px;
+  width: 72px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.restaurants{
+  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/7cef764a2144/assets/img/categories/72x72_restaurants@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.shopping{
+  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/559f23226d9f/assets/img/categories/72x72_shopping@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nightlife{
+  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/925cd32ac4c9/assets/img/categories/72x72_nightlife@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.active{
+  background: url("https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/2df9fcd6a68e/assets/img/categories/72x72_active_life@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.beauty{
+  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/3cfb4e602ac1/assets/img/categories/72x72_beauty@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.automotive{
+  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/c73bd7079137/assets/img/categories/72x72_automotive@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home{
+  background: url("https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/20723ad0e5ee/assets/img/categories/72x72_home_services@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.more-categories{
+  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/e7be9a50bf8c/assets/img/categories/72x72_more_categories@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
