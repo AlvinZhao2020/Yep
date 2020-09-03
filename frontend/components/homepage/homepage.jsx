@@ -15,9 +15,9 @@ class HomeForm extends React.Component {
     this.props.logout();
   }
 
-  // componentDidMount(){
-  //     this.props.fetchBusinesses();
-  // }
+  componentDidMount(){
+      this.props.fetchBusinesses();
+  }
 
   renderNavbar() {
     if (this.props.currentUser) {
@@ -54,7 +54,6 @@ class HomeForm extends React.Component {
   }
 
   render() {
-    let {Businesses} = this.props
     return (
       <div>
         <div className="home-page">
@@ -85,7 +84,7 @@ class HomeForm extends React.Component {
             </div>
 
             <div className="home-main-inner">
-              <Link to='/businesses'>
+              <Link to="/businesses">
                 <div className="home-logo">YEP</div>
               </Link>
               <div className="home-search-bar">
@@ -116,33 +115,27 @@ class HomeForm extends React.Component {
             </div>
           </div>
         </div>
-        <div className="home-page-lower-1">
-          <div className="home-lower-title">
-            Find the Best Businesses in Town
-          </div>
-          <div className="home-lower-categories-container">
-            <Link to="/businesses" className="home-drink-category">
+        <div className="home-page-itembox">
+          <div className="home-box-title">Find the Best Businesses in Town</div>
+          <div className="home-itembox-container">
+            <Link to="/businesses" className="home-category">
               <div className="home-all-picture" />
               <div className="home-category-text">All Businesses</div>
             </Link>
-            <Link to="" className="home-drink-category">
+            <Link to="/businesses/chinesefood" className="home-category">
               <div className="home-CF-picture" />
               <div className="home-category-text">Chinese Food</div>
             </Link>
-            <Link to="" className="home-drink-category">
+            <Link to="/businesses/bbq" className="home-category">
               <div className="home-BBQ-picture" />
               <div className="home-category-text">BBQ</div>
             </Link>
-            <Link to="" className="home-drink-category">
+            <Link to="/businesses/sushi" className="home-category">
               <div className="home-SUSHI-picture" />
               <div className="home-category-text">SUSHI</div>
             </Link>
           </div>
         </div>
-
-        {/* <div className="home-page-lower-1">
-          <div className="home-lower-title">HOT AND NEW!!!</div>
-        </div> */}
         <Footer />
       </div>
     );

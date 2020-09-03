@@ -15,10 +15,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   flex-direction: column;
-  min-width: 1020px;
+  /* min-width: 1020px; */
 }
 
 .home-main-nav-bar{
@@ -52,6 +52,7 @@
   padding-bottom: 8px;
   margin-top: 8px;
   border-bottom: 2px solid transparent;
+  font-size:14px;
   cursor: pointer;
 }
 
@@ -136,14 +137,14 @@
   cursor: pointer;
 }
 
-.home-page-lower-1{
+.home-page-itembox{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F5F5F5;
+  background: white
 }
 
-.home-lower-title{
+.home-box-title{
   margin: 20px 0 30px;
   padding: 10px;
   font-size: 24px;
@@ -151,7 +152,7 @@
   color: #d32323;
 }
 
-.home-lower-categories-container{
+.home-itembox-container{
   height: 300px;
   width: 960px;
   justify-content: space-between;
@@ -159,7 +160,7 @@
   flex-direction: row;
 }
 
-.home-drink-category{
+.home-category{
   width: 216px;
   height: 250px;
   border: 1px solid rgb(207, 207, 207);
@@ -170,11 +171,11 @@
   transition: all 100ms ease-in-out;
 }
 
-.home-drink-category:hover{
+.home-category:hover{
   box-shadow: 2px 2px 15px #bdbdbd;
 }
 
-.home-drink-category:hover > div {
+.home-category:hover > div {
   color: #0073bb;
 }
 
@@ -219,56 +220,6 @@
   height: 85%;
 }
 
-.home-page-footer{
-  height: 200px;
-  background: #F5F5F5;
-  border-top: 1px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.home-page-footer-title{
-  color: #D32223;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.home-page-footer-links{
-  font-size: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  width: 400px;
-}
-
-.home-page-footer-links > a:hover{
-  color: #D32223;
-}
-
-.home-page-lower-2 {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home-page-categories-box{
-  border: 1px solid rgb(230, 230, 230);
-  border-radius: 4px;
-  height: 135px;
-  width: 216px;
-  padding: 17px 11px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  font-weight: bold;
-  background: white;
-  transition: all 100ms ease-in-out;
-}
 
 .home-page-categories-box:hover{
   border-color: #0073bb;
@@ -284,50 +235,4 @@
   background-repeat: no-repeat;
 }
 
-.restaurants{
-  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/7cef764a2144/assets/img/categories/72x72_restaurants@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
-.shopping{
-  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/559f23226d9f/assets/img/categories/72x72_shopping@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.nightlife{
-  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/925cd32ac4c9/assets/img/categories/72x72_nightlife@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.active{
-  background: url("https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/2df9fcd6a68e/assets/img/categories/72x72_active_life@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.beauty{
-  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/3cfb4e602ac1/assets/img/categories/72x72_beauty@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.automotive{
-  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/c73bd7079137/assets/img/categories/72x72_automotive@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.home{
-  background: url("https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/20723ad0e5ee/assets/img/categories/72x72_home_services@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.more-categories{
-  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/e7be9a50bf8c/assets/img/categories/72x72_more_categories@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
