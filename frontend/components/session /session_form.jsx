@@ -2,6 +2,7 @@ import React from 'react';
 import LoginForm from './login_form';
 import SignupForm from './signup_form';
 import Footer from "../footer/footer";
+import {Link} from 'react-router-dom'
 
 class SessionForm extends React.Component{
   constructor(props){
@@ -34,7 +35,7 @@ class SessionForm extends React.Component{
     <SignupForm signup={signup} login={login} errors={errors} clearErrors={clearErrors}></SignupForm> :
     <LoginForm login={login} errors={errors} clearErrors={clearErrors} signup={signup}></LoginForm>
     
-    let text = this.state.signupStatus ?
+    let msg = this.state.signupStatus ?
     <div className="login-tiny-text"> Welcome Back! <a onClick={this.handleClick(false)}> Login </a></div> :
     <div className="login-tiny-text"> Join Now! <a onClick={this.handleClick(true)}> SignUp </a></div>
   
@@ -42,12 +43,12 @@ class SessionForm extends React.Component{
       <div>
         <div>
           <div className="header">
-            <a href="/">YEP</a>
+            <Link to="/">YEP</Link>
           </div>
           <div className="body-container">
             <div className="user-login">
               <div>{form}</div>
-              <div>{text}</div>
+              <div>{msg}</div>
             </div>
             <div className="session-img"></div>
           </div>

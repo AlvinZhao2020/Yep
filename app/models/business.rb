@@ -11,9 +11,9 @@ class Business < ApplicationRecord
   has_many_attached :photos
 
 
-  # def rating_average
-  #   reviews.average(:rating)
-  # end
+  def rating_average
+    reviews.average(:rating)
+  end
 end
 
 

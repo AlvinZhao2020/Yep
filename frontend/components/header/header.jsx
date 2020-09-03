@@ -87,25 +87,25 @@ class Header extends React.Component {
           <div className="business-nav-bar-category-box">
             <div className="nav-bar-category-item">
               <Link to="/">
-                <i className="fas fa-home"></i> Homepage
+                <i className="fab fa-yelp"></i> Homepage
               </Link>
             </div>
             <div className="nav-bar-category-item">
               <Link to="/businesses">
-                <i className="fas fa-utensils"></i> All Business{" "}
+                <i className="fas fa-home"></i> All Business{" "}
                 <i className="fas fa-caret-down"></i>
               </Link>
             </div>
 
             <div className="nav-bar-category-item">
-              <Link to="/businesses/chinesefood">
-                <i className="fas fa-utensils"></i> Chinese Food{" "}
+              <Link to="/businesses/bbq">
+                <i className="fas fa-utensils"></i> BBQ{" "}
                 <i className="fas fa-caret-down"></i>
               </Link>
             </div>
             <div className="nav-bar-category-item">
-              <Link to="/businesses/bbq">
-                <i className="fas fa-utensils"></i> BBQ{" "}
+              <Link to="/businesses/sushi">      
+                <i className="fas fa-fish"></i> Sushi{" "}
                 <i className="fas fa-caret-down"></i>
               </Link>
             </div>
@@ -116,8 +116,8 @@ class Header extends React.Component {
               </Link>
             </div>
             <div className="nav-bar-category-item">
-              <Link to="/businesses/sushi">
-                <i className="fas fa-fish"></i> Sushi{" "}
+              <Link to="/businesses/chinesefood">
+                <i className="fas fa-utensils"></i> Chinese Food{" "}
                 <i className="fas fa-caret-down"></i>
               </Link>
             </div>
