@@ -1,11 +1,12 @@
 import { connect } from "react-redux";
-import { fetchBusinesses } from "../../actions/business_actions";
-import { sushi } from "../../reducers/category_selector";
-import BusinessIndex from "./business_index";
+import { fetchBusinesses } from "../../../actions/business_actions";
+import { Bar} from "../../../reducers/category_selector";
+import BusinessIndex from "../business_index";
+
 
 const mSTP = (state) => {
   return {
-    businesses: sushi(state),
+    businesses: Bar(state),
   };
 };
 

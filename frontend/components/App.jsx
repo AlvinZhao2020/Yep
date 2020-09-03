@@ -5,10 +5,10 @@ import LoginContainer from './session /login_container'
 import SignupContainer from './session /signup_container'
 import HomepageContainer from './homepage/homepage_container'
 import BusinessIndexContainer from './business/business_index_container'
-import ChinesefoodIndex from './business/chinesefood_index'
-import BarIndex from './business/bar_index'
-import BbqIndex from './business/bbq_index'
-import SushiIndex from './business/sushi_index'
+import ChinesefoodIndex from './business/biz_filter_pages/chinesefood_index'
+import BarIndex from './business/biz_filter_pages/bar_index'
+import BbqIndex from './business/biz_filter_pages/bbq_index'
+import SushiIndex from './business/biz_filter_pages/sushi_index'
 const App = () => (
   <div>
     <Switch>
