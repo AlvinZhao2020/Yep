@@ -6,10 +6,10 @@ class Api::ReviewsController < ApplicationController
         if @review.save
             render :show
         else
-            render json: @review, status: :unprocessable_entity
+            render json: @review.errors.full_messages,status: 422
     end
 
-    def delete
+    def destroy
         @review = Review.find(params[:id])
         if( @review.author_id == current_user.id)               
             @review.destroy
@@ -23,7 +23,13 @@ class Api::ReviewsController < ApplicationController
     def index
     end
 
-    def edit
+    def update
+        @review = Review.find(params[:id])
+        if @review.update(review_params)
+        render :show
+        else
+        render json: @review.errors.full_messages, status: 422
+        end
     end
 
     def review_params

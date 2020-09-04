@@ -4,7 +4,8 @@ import BusinessShow from './business_show';
 
 
 const mSTP = (state, ownProps) => ({
-    business: state.entities.businesses[ownProps.match.params.id]
+    business: state.entities.businesses[ownProps.match.params.id],
+    
 })
 
 const mDTP = dispatch => {

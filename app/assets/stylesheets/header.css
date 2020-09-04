@@ -1,10 +1,8 @@
 .business-nav-bar-parent {
   font-size: 15px;
-
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 .business-nav-bar-upper-parent {
@@ -23,7 +21,7 @@
 
 
 .business-logo {
- height: 50px;
+    height: 50px;
     line-height: 75px;
     color: white;
     font-weight: 700;
@@ -67,7 +65,7 @@
 }
 
 .business-nav-bar-categories{
-  background-color: rgb(240, 240, 240);
+  background-color: white;
 }
 
 .business-nav-bar-category-box {

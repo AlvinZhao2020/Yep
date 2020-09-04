@@ -22,7 +22,7 @@ class Map extends React.Component {
   }
 
   render() {
-    return <div className="map" ref={(map) => (this.mapNode = map)} />;
+    return <div className='map' ref={(map) => (this.mapNode = map)} />;
   }
 }
 

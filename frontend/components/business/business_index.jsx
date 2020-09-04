@@ -20,13 +20,13 @@ class BusinessIndex extends React.Component{
 
             <div className="business-index-box">
               <div className="business-index-wraper">
-                <div className='business-items-box'>
+                <div className="business-items-box">
                   {businesses.map((b, i) => (
                     <BusinessIndexItem key={i} business={b} />
                   ))}
                 </div>
-                <div className='map-box'>
-                  <Map businesses={businesses} />
+                <div className="map-box">
+                  <Map className="index-map" businesses={businesses} />
                 </div>
               </div>
             </div>

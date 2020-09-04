@@ -1,0 +1,104 @@
+.biz-show-img{
+    height: 280px;
+    width: 380px;
+}
+.biz-img-item-box{
+    margin: 10px 15px;
+ 
+}
+.biz-img-index-box{
+  
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+}
+.show-page-box{
+    /* border: 1px solid black; */
+    display:flex;
+    margin: 5px 30px;
+    justify-content:space-around;
+}
+.show-left-box{
+    /* border: 1px solid black; */
+    width: 50%;
+    /* margin: 5px 30px; */
+    /* justify-content:space-around; */
+    
+}
+.show-right-box{
+    /* border: 1px solid black; */
+    width: 45%;
+}
+
+.show-bname{
+    font-size:30px;
+    font-family: Poppins,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 910;
+    /* border: 1px solid black;   */
+    justify-content: center;
+    align-items: center;
+    color: #2b273c;
+}
+
+.show-biz-details{
+    /* border: 1px solid black; */
+    margin-top:8px;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:18;
+    font-weight: 700;
+    color:#757280
+}
+
+.show-cate-link{
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:18;
+    font-weight: 700;
+    color:#757280
+}
+.show-cate-link:hover{
+    border-bottom: 2px solid #757280;
+}
+.show-opening{
+    font-size:18;
+    font-weight: 700;
+    color:#757280
+}
+.show-open-tag{
+    color:#05a882
+}
+.show-write-review-button-box{
+    margin: 20px 5px;
+}
+
+.show-write-review-button{
+    color:white;
+    font-size:18px ;
+    font-weight: 700;
+    background-color: #d90007;
+    height: 40px;
+    width: 180px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #7c1014;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.show-write-review-button:hover{
+    background-color: red
+}
+
+.review-index-box{
+    height: 500px;
+     border: 1px solid black;
+}
+
+
+.show-info-map-box{
+    height: 500px;
+     /* border: 1px solid black; */
+    margin:20px;
+}
+.show-time-table{
+    height: 500px;
+      border: 1px solid black;
+}
