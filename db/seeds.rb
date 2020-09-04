@@ -9,6 +9,7 @@ require 'open-uri'
 
 User.destroy_all
 Business.destroy_all
+Review.destroy_all
 demouser = User.create!(email: 'alvin@zhao.com', password: '123456', first_name: 'Alvin', last_name: ' Zhao', zipcode: '91765')
 
 # chinese Food
@@ -662,3 +663,38 @@ photo59 = open('https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/s14.jp
 b20.photos.attach(io: photo59, filename: 's14')
 photo60 = open('https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/s15.jpeg')
 b20.photos.attach(io: photo60, filename: 's15')
+
+
+# reviews
+
+Review.create!(
+  body: "I can see how this place is 5 stars on Yelp, but I'm going to have to disagree a little bit with the community on this one. I came here with a friend on a strong recommendation, and after reading the reviews, I arrived",
+  rating: 4,
+  biz_id: b1.id,
+  author_id: demouser.id,
+)
+Review.create!(
+  body: "Just as good as their North Beach sister restaurant. We ordered a roasted chicken, mixed salad and fries to go.  Grilled chicken had a great skin and not greasy. Salad was a fresh, balanced mix. Salsa was zesty and made me wish for tortillas instead of bread",
+  rating: 4,
+  biz_id: b2.id,
+  author_id: demouser.id,
+)
+Review.create!(
+  body: "This is a great new restaurant. The neighborhood is very lucky to get good spot especially in these hard times.If you haven't tried them, give them a try.",
+  rating: 3,
+  biz_id: b3.id,
+  author_id: demouser.id,
+)
+Review.create!(
+  body: "This is a great new restaurant. The neighborhood is very lucky to get good spot especially in these hard times.If you haven't tried them, give them a try.",
+  rating: 3,
+  biz_id: b4.id,
+  author_id: demouser.id,
+)
+
+Review.create!(
+  body: "This is a great new restaurant. The neighborhood is very lucky to get good spot especially in these hard times.If you haven't tried them, give them a try.",
+  rating: 4,
+  biz_id: b5.id,
+  author_id: demouser.id,
+)

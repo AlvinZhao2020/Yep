@@ -1,15 +1,13 @@
 .biz-show-img{
     height: 280px;
-    width: 380px;
+    width: 420px;
 }
 .biz-img-item-box{
-    margin: 10px 15px;
+    /* margin: 10px 15px; */
  
 }
 .biz-img-index-box{
-  
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-around;
 }
 .show-page-box{
@@ -86,17 +84,18 @@
 .show-write-review-button:hover{
     background-color: red
 }
-
+/* 
 .review-index-box{
-    height: 500px;
-     border: 1px solid black;
-}
+
+} */
 
 
 .show-info-map-box{
     height: 500px;
-     /* border: 1px solid black; */
-    margin:20px;
+    /* border: 1px solid black; */
+    margin-left:60px;
+    margin-right: 20px;
+  
 }
 .show-time-table{
     height: 500px;

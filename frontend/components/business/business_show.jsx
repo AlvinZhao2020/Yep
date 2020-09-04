@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from '../header/header'
+import HeaderContainer from '../header/header_container'
 import Footer from '../footer/footer'
 import { Link } from 'react-router-dom';
 import Map from '../map/map'
-
+import ReviewIndex from '../review/review_index'
+import ReviewIndexContainer from '../review/review_index_container'
 
 
 class BusinessShow extends React.Component{
@@ -13,6 +14,7 @@ class BusinessShow extends React.Component{
 
     componentDidMount() {
         this.props.fetchBusiness(this.props.match.params.id);
+        this.props.fetchReviews();
     }
 
     render(){
@@ -40,7 +42,7 @@ class BusinessShow extends React.Component{
         } = business;
         return (
           <div>
-            <Header />
+            <HeaderContainer/>
             <div className="biz-img-index-box">
               {photoUrls.map((p, i) => (
                 <div key={i} className="biz-img-item-box">
@@ -104,7 +106,7 @@ class BusinessShow extends React.Component{
                   </button>
                 </div>
                 <div className="review-index-box">
-                  all review goes here like a review index
+                  <ReviewIndexContainer reviews={this.props.reviews}/>
                 </div>
               </div>
               <div className="show-right-box">
