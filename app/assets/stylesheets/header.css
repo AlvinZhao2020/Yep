@@ -79,6 +79,7 @@
 }
 .nav-bar-category-item{
     font-weight: bold;
+    color: #3c5da0;
 }
 .nav-bar-category-item:hover{
     color:red;

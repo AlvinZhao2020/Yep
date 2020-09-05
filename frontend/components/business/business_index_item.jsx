@@ -7,9 +7,12 @@ class BusinessIndexItem extends React.Component {
       address,city,business_info,rating,} = this.props.business;
     let ItemRating = rating*2
     return (
-      <Link to={`/businesses/${id}`}>
+      <div>
+        <Link to={`/businesses/${id}`}>
         <li className="business-index-item-box">
+          
           <div className="business-index-item-skeleton-box">
+            
             <div className="business-index-item-photo">
               <img src={photoUrls[0]} />
             </div>
@@ -47,13 +50,18 @@ class BusinessIndexItem extends React.Component {
               <div className="business-description-box">
                 "{business_info}"
               </div>
+             
               <div className='review-button-box'>
-                <button className="review-button"> Leave a Review</button>
+                <Link to={`/businesses/${id}/newRev`}>
+                  <button className="review-button"> Leave a Review</button>
+                </Link>
               </div>
             </div>
           </div>
         </li>
-      </Link>
+        </Link>
+      </div>
+
     );
   }
 }

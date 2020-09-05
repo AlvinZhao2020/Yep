@@ -7,25 +7,31 @@ class ReviewForm extends React.Component{
         this.state ={
             author_id: this.props.currentUser,
             biz_id: this.props.match.params.id,
-            rating: '',
+            rating: 5,
             body:''
         }
         this.handleSubmit= this.handleSubmit.bind(this);
-        this.submitDone=this.submitDone.bind(this)
+        this.submitDone=this.submitDone.bind(this);
     }
 
-    componentDidMount(){
-        this.props.fetchReviews();
-        this.props.fetchBusiness(this.props.match.params.id)
-    }
     submitDone(){
-        this.props.history.push(`/businesees/${this.props.match.params.id}`);
+        this.props.history.push(`/businesses/${this.props.match.params.id}`);
+    }
+
+  
+    loginAlert(){
+        alert('Before you leave a review You need to login first')
     }
 
     handleSubmit(e){
-        e.preventDefault;
-        this.props.action(this.state)
-        .then(()=>this.submitDone())
+        if(this.props.currentUser){
+            e.preventDefault;
+            this.props.action(this.state)
+            .then(()=>this.submitDone())
+        }else{
+           e.preventDefault;
+           this.loginAlert()
+        }
     }
 
     handleInput(field){
@@ -41,17 +47,17 @@ class ReviewForm extends React.Component{
                         <form className='review-form' onSubmit={this.handleSubmit}>
                             <div className='form-wrapper'>
                             <div className='review-form-rating'>
-                                <label>How Many Stars  :<i className="far fa-star"></i>
+                                    <label>How&nbsp;Many&nbsp;Stars&nbsp;:&nbsp;<i className="far fa-star"></i>
                                 <select 
                                 value={this.state.rating} 
                                 className='star-selector'
                                 onChange={this.handleInput('rating')}
                                 >
-                                    <option value="1">1 star </option>
-                                    <option value="2">2 stars</option>
-                                    <option value="3">3 stars</option>
-                                    <option value="4">4 stars</option>
-                                    <option value="5">5 stars</option>
+                                    <option value="1">1 star  </option>
+                                    <option value="2">2 stars </option>
+                                    <option value="3">3 stars </option>
+                                    <option value="4">4 stars </option>
+                                    <option value="5">5 stars </option>
                                 </select>
                                 </label>
                             </div>

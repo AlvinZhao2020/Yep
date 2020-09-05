@@ -1,19 +1,21 @@
-import {connect} from 'react-redux'
-import ReviewIndex from './review_index'
-import {fetchReviews} from '../../actions/review_actions'
- 
+import { connect } from "react-redux";
+import { fetchReviews, deleteReview } from "../../actions/review_actions";
+import ReviewIndex from './review_index';
 
-
-const mSTP = (state,ownProps)=>(
-    {   
+const mSTP = (state, ownProps) => {
+    let reviews = Object.values(state.entities.reviews);
+    return ({
+        reviews: reviews,
         currentUser: state.session.id,
-        
-    }
-) 
+        ownProps
+    });
+};
 
+const mDTP = dispatch => {
+    return ({
+        fetchReviews: () => dispatch(fetchReviews()),
+        deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
+    });
+};
 
-const mDTP = dispatch=>({
-    fetchReviews: ()=>dispatch(fetchReviews()),
-})
-
-export default connect(mSTP,mDTP)(ReviewIndex)
+export default connect(mSTP, mDTP)(ReviewIndex);

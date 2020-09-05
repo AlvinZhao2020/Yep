@@ -66,20 +66,20 @@
 
 .review-button-box{
   height: 20%;
-  align-items:center;
 }
 
 .review-button{
-  padding-bottom: 8px;
-  margin-top: 10px;
-  border-bottom: 2px solid transparent;
+  margin: 8px;
+  padding: 4px;
   font-size:18px;
   font-weight: bolder;
+  color:#d90007;
   cursor: pointer;
 }
 
 .review-button:hover{
    border-bottom: 3px solid red;
+   color:red
 }
 
 

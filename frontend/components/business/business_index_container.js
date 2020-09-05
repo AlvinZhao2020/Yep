@@ -1,5 +1,6 @@
 import {connect} from 'react-redux'
 import {fetchBusinesses} from '../../actions/business_actions'
+import {fetchAllUsers} from '../../actions/user_actions'
 import BusinessIndex from './business_index'
 
 const mSTP = (state) => {
@@ -7,7 +8,8 @@ const mSTP = (state) => {
     };
 
 const mDTP = dispatch=>({
-    fetchBusinesses: ()=>dispatch(fetchBusinesses())
+    fetchBusinesses: ()=>dispatch(fetchBusinesses()),
+    fetchAllUsers: ()=>dispatch(fetchAllUsers())
 })
 
 export default connect(mSTP,mDTP)(BusinessIndex)
