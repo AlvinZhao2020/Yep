@@ -1,24 +1,35 @@
-# README
+This App is a Clone of Yelp :
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+backend: Ruby Rails 
+database: Postgrsl
+frontend: React Redux JS Css Html 
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+1.MVPs:
 
-* Database creation
+MVP 1 . session feature: Sign up , Log in , Log out , demoLogin
 
-* Database initialization
+MVP 2 . homepage and business index page
 
-* How to run the test suite
+MVP 3 . attach Google Map API to app , render it both in businesses Indexpage and business show page
 
-* Services (job queues, cache servers, search engines, etc.)
+MVP 4 . review feature: logged in user can write a review
 
-* Deployment instructions
+BOUNUS
+MVP 5 . a filter feature that can lead user to diffrent categories
 
-* ...
+MVP 6 . Search business by category and city
+
+
+2.State Design:
+state {
+    entities:{
+        businesses:{id1:{},id2:{}}
+        users:{id1:{},id2:{}}
+        reviews:{id1:{},id2:{}}
+    }
+    session:{id}
+    errors:{session:{}}
+}
