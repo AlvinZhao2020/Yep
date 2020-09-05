@@ -35,7 +35,7 @@ class ReviewIndex extends React.Component{
                     <div className='review-item-buttons-box'>
                         <div className='handle-review-button-location'>
                             <button className='review-item-button'>Delete</button>
-                            <button className='review-item-button'>Edit</button>
+                            {/* <button className='review-item-button'>Edit</button> */}
                         </div>
                     </div>
                 </div>

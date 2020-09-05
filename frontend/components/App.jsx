@@ -10,6 +10,7 @@ import BarIndex from './business/biz_filter_pages/bar_index'
 import BbqIndex from './business/biz_filter_pages/bbq_index'
 import SushiIndex from './business/biz_filter_pages/sushi_index'
 import BusinessShowContainer from './business/business_show_container'
+import CreateContainer from './review/create_container'
 const App = () => (
   <div>
     <Switch>
@@ -26,6 +27,7 @@ const App = () => (
       <Route exact path="/businesses/bbq" component={BbqIndex} />
       <Route exact path="/businesses/sushi" component={SushiIndex} />
       <Route exact path="/businesses/:id" component={BusinessShowContainer}/>
+      <Route exact path='/businesses/:id/createreview' component={CreateContainer}/>
     </Switch>
   </div>
 );

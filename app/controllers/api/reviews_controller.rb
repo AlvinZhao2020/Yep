@@ -1,5 +1,5 @@
 class Api::ReviewsController < ApplicationController
-  before_action :require_login, only:[:create,:edit,:delete]
+skip_before_action :verify_authenticity_token
   def show
     @review = Review.find(params[:id])
   end

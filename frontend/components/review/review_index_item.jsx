@@ -3,14 +3,22 @@ import React from 'react'
 class ReviewIndexItem extends React.Component{
     constructor(props){
         super(props)
+        this.handleDelete= this.handleDelete.bind(this)
+    }
+    handleDelete(){ 
+        this.props.deleteReview(this.props.review.id)
     }
 
     showButton(){
         if (this.props.currentUser == this.props.review.author_id)
         return (
             <div className='handle-review-button-location'>
-                <button className='review-item-button'>Delete</button>
-                <button className='review-item-button'>Edit</button>
+                {/* <button className='review-item-button'>Delete</button> */}
+                <button 
+                className='review-item-button'
+                onClick={this.handleDelete}
+                >
+                Delete</button>
             </div>
         )
     }

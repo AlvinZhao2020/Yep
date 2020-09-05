@@ -66,11 +66,13 @@
 }
 .show-write-review-button-box{
     margin: 20px 5px;
+    /* border: 1px solid black */
 }
 
 .show-write-review-button{
+    padding: 6px 0px;
     color:white;
-    font-size:18px ;
+    font-size:20px ;
     font-weight: 700;
     background-color: #d90007;
     height: 40px;

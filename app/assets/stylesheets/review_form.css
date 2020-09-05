@@ -1,0 +1,76 @@
+.form-box{
+    /* border: 1px solid black; */
+    margin: 0 10px 0 10px;
+}
+
+.form-title{
+    font-size:40px;
+    margin:10px;
+    margin-left:300px;
+    margin-right: 300px;
+    color: #d32323; 
+    text-align: center;
+    font-weight: 900;
+    /* border: 1px solid black */
+}
+
+.from-info-box{
+    margin:10px;
+    /* border:1px solid gray; */
+    margin-left:300px;
+    margin-right: 300px;
+}
+.form-wrapper{
+    border: 1px solid gray;
+    margin:5px;
+}
+
+.review-form-rating{
+    font-size:20px;
+    margin: 0 10px 0 10px;
+    /* border:1px solid black */
+}
+.star-selector{
+    height: 25px;
+    width: 60px;
+    margin: 7px;
+   
+}
+
+
+.review-body{
+    margin:0 10px 0 10px;
+    /* border:1px solid black */
+}
+
+.submit-button-box{
+    margin:10px;
+    /* border:1px solid black; */
+  
+    
+}
+.rform-submit-button{
+    float:right;
+    width: 200px;
+    height: 30px;
+    font-size:20px;
+    font-weight: 500;
+    text-align: center;
+    color:white;
+    background:#d32323;
+    border:1px solid black;
+    border-radius: 3px;
+    /* margin-left: 155px;
+    margin-right: 155px; */
+}
+.rform-submit-button:hover{
+    background-color:red
+}
+
+.body-text{
+    height: 90%;
+    width: 98%;
+    /* border: 1px solid black; */
+    margin:2px;
+    font-size:18px;
+}

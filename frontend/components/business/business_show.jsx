@@ -101,9 +101,11 @@ class BusinessShow extends React.Component{
                   </ul>
                 </div>
                 <div className="show-write-review-button-box">
-                  <button className="show-write-review-button">
-                    <i className="far fa-star"></i>&nbsp;write a review
-                  </button>
+                  <Link to={`/businesses/${business.id}/createreview`}>
+                    <div className="show-write-review-button">
+                      <i className="far fa-star"></i>&nbsp;write a review
+                    </div>
+                  </Link>   
                 </div>
                 <div className="review-index-box">
                   <ReviewIndexContainer reviews={this.props.reviews}/>
