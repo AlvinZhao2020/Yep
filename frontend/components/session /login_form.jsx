@@ -48,8 +48,8 @@ class LoginForm extends React.Component{
         <div className="login-container">
           <h2 className='title'>Log In to YEP</h2>
           <div className="login-subheading">
-            New to YEP? <Link className="signup-link" to="/signup" onClick={this.handleClick}>
-              Sign up
+            Sign In Later ? <Link className="signup-link" to="/" onClick={this.handleClick}>
+              Home Page
             </Link>
           </div>
           <div className="legal">

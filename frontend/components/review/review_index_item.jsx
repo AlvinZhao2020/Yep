@@ -5,17 +5,20 @@ class ReviewIndexItem extends React.Component{
         super(props)
     }
 
+
+
     handleDelete(){ 
         return(e)=>{
         e.preventDefault();
-        this.props.deleteReview(this.props.review.id);}
+            this.props.deleteReview(this.props.review.id).then(window.location.reload())
+        }
     }
 
     showButton(){
         if (this.props.currentUser === this.props.author.id)
         return (
             <div className='handle-review-button-location'>
-                {/* <button className='review-item-button'>Delete</button> */}
+                {/* <button className='review-item-button'>Edit</button> */}
                 <button 
                 className='review-item-button'
                 onClick={this.handleDelete()}
@@ -47,7 +50,7 @@ class ReviewIndexItem extends React.Component{
                         </div>
                     </div>
                     <div className='review-item-body'>
-                        {this.props.review.body}
+                        <p>{this.props.review.body}</p>
                     </div>
                     <div className='review-item-buttons-box'>
                         {this.showButton()}   

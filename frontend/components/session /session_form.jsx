@@ -46,11 +46,15 @@ class SessionForm extends React.Component{
             <Link to="/">YEP</Link>
           </div>
           <div className="body-container">
-            <div className="user-login">
-              <div>{form}</div>
-              <div>{msg}</div>
+            <div className='session-left-box'>
+              <div className="user-login">
+                <div >{form}</div>
+                <div>{msg}</div>
+              </div>
             </div>
-            <div className="session-img"></div>
+            <div className='session-right-box'>
+              <div className="session-img"/>
+            </div>
           </div>
         </div>
         <Footer />

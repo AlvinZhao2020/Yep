@@ -17,7 +17,7 @@ const mDTP = dispatch => {
     return ({
         fetchBusiness: (id) => dispatch(fetchBusiness(id)),
         fetchReviews: ()=>dispatch(fetchReviews()),
-        fetchAllUsers:()=>dispatch(fetchAllUsers())
+        fetchAllUsers:()=>dispatch(fetchAllUsers()),
     });
 };
 

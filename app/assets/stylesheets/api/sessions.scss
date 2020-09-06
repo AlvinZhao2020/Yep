@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 10px;
     background-color: #d90007;
+    // border: 1px solid black
 }
 
 
@@ -21,12 +22,14 @@
 }
 
 .login-container{
+  //  border: 1px solid grey;
   flex-flow: column, wrap;
   width: 300px;
   margin-top: 50px;
 }
 
 .signup-container{
+  //  border: 1px solid grey;
   flex-flow: column, wrap;
   width: 300px;
   margin-top: 150px;
@@ -171,12 +174,14 @@
 
 
 .body-container {
+  //  border: 1px solid grey
+   margin:30px 100px 100px 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 500px;
-  width: 1300px;
-  margin-bottom: 250px;
+  // width: 1300px;
+
 }
 
 .login-tiny-text{
@@ -196,7 +201,7 @@
 
 .user-login{
   flex: 1;
-  margin-left: 250px;
+  margin:100px;
   display: flex;
   flex-direction: column;
 }
@@ -208,4 +213,14 @@
   background: url(https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/signup_illustration.png);
   background-repeat: no-repeat;
   
+}
+
+.session-left-box{
+  // border:1px solid black;
+  // align-items: center;
+}
+
+.session-right-box{
+  margin-top:150px;
+  // border:1px solid black
 }

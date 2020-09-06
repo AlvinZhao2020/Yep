@@ -3,9 +3,7 @@ import { fetchReviews, deleteReview } from "../../actions/review_actions";
 import ReviewIndex from './review_index';
 
 const mSTP = (state, ownProps) => {
-    let reviews = Object.values(state.entities.reviews);
     return ({
-        reviews: reviews,
         currentUser: state.session.id,
         ownProps
     });

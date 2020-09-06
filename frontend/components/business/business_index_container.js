@@ -9,7 +9,6 @@ const mSTP = (state) => {
 
 const mDTP = dispatch=>({
     fetchBusinesses: ()=>dispatch(fetchBusinesses()),
-    fetchAllUsers: ()=>dispatch(fetchAllUsers())
 })
 
 export default connect(mSTP,mDTP)(BusinessIndex)

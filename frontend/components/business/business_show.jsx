@@ -16,10 +16,12 @@ class BusinessShow extends React.Component{
       this.props.fetchBusiness(this.props.match.params.id);
       this.props.fetchReviews(); 
       this.props.fetchAllUsers();
+    
   }
 
   render(){
-      let {business} = this.props
+      let {business,reviews} = this.props
+      
       if (business === undefined) return (
           <div>reloading page</div>
       )
@@ -107,7 +109,7 @@ class BusinessShow extends React.Component{
                 </Link>   
               </div>
               <div className="review-index-box">
-                <ReviewIndexContainer users={this.props.users}/>
+                <ReviewIndexContainer users={this.props.users} reviews={reviews} />
               </div>
             </div>
             <div className="show-right-box">

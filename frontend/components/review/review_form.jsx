@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderContainer from '../header/header_container'
+import {withRouter} from 'react-router-dom'
 
 class ReviewForm extends React.Component{
     constructor(props){
@@ -24,12 +25,11 @@ class ReviewForm extends React.Component{
     }
 
     handleSubmit(e){
+        e.preventDefault;
         if(this.props.currentUser){
-            e.preventDefault;
             this.props.action(this.state)
-            .then(()=>this.submitDone())
-        }else{
-           e.preventDefault;
+            .then(this.submitDone())
+        }else{ 
            this.loginAlert()
         }
     }
@@ -85,4 +85,4 @@ class ReviewForm extends React.Component{
     }
 }
 
-export default ReviewForm
+export default withRouter(ReviewForm)
