@@ -1,14 +1,17 @@
 .biz-show-img{
-    height: 280px;
-    width: 420px;
+    height: 100%;
+   
 }
 .biz-img-item-box{
-    /* margin: 10px 15px; */
+    width: 33.3%;
+    height: 350px;
+
  
 }
 .biz-img-index-box{
+    /* border: 1px solid black; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .show-page-box{
     /* border: 1px solid black; */
@@ -93,14 +96,14 @@
 
 
 .show-info-map-box{
-    height: 500px;
+
     /* border: 1px solid black; */
-    margin-left:60px;
-    margin-right: 20px;
+    justify-content: center;
+    
   
 }
 .show-time-table{
     height: 500px;
-      border: 1px solid black;
+      /* border: 1px solid black; */
 }
 

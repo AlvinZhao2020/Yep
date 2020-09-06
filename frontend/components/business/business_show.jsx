@@ -113,13 +113,12 @@ class BusinessShow extends React.Component{
               </div>
             </div>
             <div className="show-right-box">
-              <div className="show-info-map-box">
+              <div className="show-info-map-box">        
                 <Map
-                  className="show-map"
                   businesses={[this.props.business]}
                   lat={lat}
                   lng={lng}
-                />
+                />  
               </div>
             </div>
           </div>

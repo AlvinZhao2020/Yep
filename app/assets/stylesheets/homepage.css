@@ -1,5 +1,6 @@
 .home-page{
   height: 570px;
+  /* border:1px solid black */
 }
 
 .home-main-section::after {
@@ -15,14 +16,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 600px; */
+  /* border:1px solid black; */
+  height: 600px;
   display: flex;
   flex-direction: column;
-  /* min-width: 1020px; */
+  min-width: 1020px;
 }
 
 .home-main-nav-bar{
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -163,12 +165,12 @@
 .home-category{
   width: 216px;
   height: 250px;
-  border: 1px solid rgb(207, 207, 207);
+  /* border: 1px solid rgb(207, 207, 207); */
   display: flex;
   flex-direction: column;
   border-radius: 3px;
   cursor: pointer;
-  transition: all 100ms ease-in-out;
+
 }
 
 .home-category:hover{
@@ -180,14 +182,14 @@
 }
 
 .home-category-text{
-  color: black;
+  color: #d32323;
   font-size: 20px;
   font-weight: bold;
   height: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+
 }
 
 .home-all-picture{
@@ -221,18 +223,5 @@
 }
 
 
-.home-page-categories-box:hover{
-  border-color: #0073bb;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
-  color: #0073bb;
-  cursor: no-drop;
-}
-
-.category-background{
-  height: 72px;
-  width: 72px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
 

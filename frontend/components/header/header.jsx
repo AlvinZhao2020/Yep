@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import Search from '../search/search'
 
 class Header extends React.Component {
   constructor(props) {
@@ -57,27 +58,7 @@ class Header extends React.Component {
               </p>
             </div>
             <div className="business-nav-search">
-              <div className="home-search-find">
-                <div className="home-search-find-title">Find</div>
-                <input
-                  className="business-search-find"
-                  type="text"
-                  placeholder="Chinese Food, BBQ , Sushi"
-                />
-              </div>
-              <div className="home-search-loc">
-                <div className="home-search-loc-input">
-                  <div className="home-search-find-near">Near</div>
-                  <input
-                    className="business-search-near"
-                    type="text"
-                    placeholder="San Francisco"
-                  />
-                </div>
-                <button className="home-search-submit">
-                  <i className="fas fa-search" />
-                </button>
-              </div>
+              <Search/>
             </div>
             {this.renderNavbar()}
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../footer/footer";
+import Search from '../search/search';
 
 
 class HomeForm extends React.Component {
@@ -87,31 +88,7 @@ class HomeForm extends React.Component {
               <Link to="/businesses">
                 <div className="home-logo">YEP</div>
               </Link>
-              <div className="home-search-bar">
-                <div className="home-search-find">
-                  <div className="home-search-find-title">Find</div>
-                  <input
-                    className="business-search-find"
-                    type="text"
-                    placeholder="Chinese Food, SUSHI, BBQ"
-                  />
-                </div>
-                <div className="home-search-loc">
-                  <div className="home-search-loc-input">
-                    <div className="home-search-find-near">Near</div>
-                    <input
-                      className="business-search-near"
-                      type="text"
-                      placeholder="City"
-                    />
-                  </div>
-                  <Link to="/businesses">
-                    <button className="home-search-submit">
-                      <i className="fas fa-search" />
-                    </button>
-                  </Link>
-                </div>
-              </div>
+              <Search/>
             </div>
           </div>
         </div>
