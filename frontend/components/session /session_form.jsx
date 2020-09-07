@@ -57,7 +57,9 @@ class SessionForm extends React.Component{
             </div>
           </div>
         </div>
-        <Footer />
+        <div className='sesseion-footer-box'>
+          <Footer />
+        </div>
       </div>
     );
   }

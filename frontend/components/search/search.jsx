@@ -19,7 +19,7 @@ class Search extends React.Component{
 
     Searchfc(cate){
         let arr = ['ChineseFood','chinese','Sushi', 'BBQ', 'Bar', 'chinesefood', 'Chinesefood',
-            'sushi', 'bbq', 'bar', 'BAR', 'SuShi', 'Chinese Food']
+            'sushi', 'bbq', 'bar', 'BAR', 'SuShi']
         if(arr.includes(cate)) return cate;
         else return ''
       
