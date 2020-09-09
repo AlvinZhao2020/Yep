@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route} from "react-router-dom";
-import { AuthRoute, ProtectedRoute } from "../util/route_util";
+import { AuthRoute} from "../util/route_util";
 import LoginContainer from './session /login_container'
 import SignupContainer from './session /signup_container'
 import HomepageContainer from './homepage/homepage_container'

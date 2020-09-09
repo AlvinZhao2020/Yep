@@ -4,7 +4,7 @@ import Footer from "../footer/footer";
 import Search from '../search/search';
 
 
-class HomeForm extends React.Component {
+class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.handleLogout = this.handleLogout.bind(this);
@@ -119,4 +119,4 @@ class HomeForm extends React.Component {
   }
 }
 
-export default HomeForm;
+export default HomePage;
