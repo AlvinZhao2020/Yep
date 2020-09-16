@@ -155,7 +155,7 @@ export default LoginForm;
 
 
 ## Technologies
-* Backend - Rails, Ruby, MongoDB
+* Backend - Rails, Ruby, postgresql
 * Frontend - React, Redux, JavaScript, CSS, HTML.
 
 
