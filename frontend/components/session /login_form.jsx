@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect, Switch, Link, HashRouter } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 const DEMO_USER = { email: "alvin@zhao.com", password: "123456" } 
