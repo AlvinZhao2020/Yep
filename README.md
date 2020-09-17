@@ -13,13 +13,13 @@ review for a business, this user needs to login or sign up for a new user.
 
 ### home page
 
-There are 
+On homepage. There are 
 * top nav bar :link to login/log out && click 'write a review' will lead user to businesses
   index page
-* search component : Users can search for their favorite kind of businesses
-* categorys componet : click one of them will go to that category page
-* footer :links to developer's github, linkedin 
-on the homepage. 
+* search component : Users can search for their favorite kind of businesses. eg. sushi
+* categorys component : Clicking anyone of them,user will go to that category page
+* footer :Links to developer's github, linkedin 
+
 
 ![Alt Text](app/assets/images/homepageshow.gif)
 
@@ -27,13 +27,15 @@ on the homepage.
 User needs to log in before leaving a review for one business, when user logged in
 he or she will get a session-token and next time when user opens this app , no more
 login needed.A good thing is , if user doesnt want to sign up, just click demoUser 
-button,then will login automaticly as a demo user.
+button,then will login automatically as a demo user.
 
 ![Alt Text](app/assets/images/sessionshow.gif)
 
 ### Search 
 
-Users can search for their favorite kind of businesses
+Users can search for their favorite kind of businesses, right now in database 
+there is only one city: San Francisco, Input anything that cant not be found ,
+will lead user to businesses index page. 
 
 ![Alt Text](app/assets/images/searchshow.gif)
 
@@ -155,7 +157,10 @@ export default LoginForm;
 
 
 ## Technologies
-* Backend - Rails, Ruby, postgresql
+* Backend - Rails, Ruby, postgresql.
 * Frontend - React, Redux, JavaScript, CSS, HTML.
+* API - Google Map API , AWS S3 API 
+* Using Heroku for live show .
+* Using uptimerobot to keep Yepclone aweak.
 
 
