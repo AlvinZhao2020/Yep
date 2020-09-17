@@ -21,7 +21,7 @@ On homepage. There are
 * footer :Links to developer's github, linkedin 
 
 
-![Alt Text](app/assets/images/homepageshow.gif)
+![Alt Text](https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/homepageshow.gif)
 
 ### Sign UP / LOG IN
 User needs to log in before leaving a review for one business, when user logged in
@@ -29,7 +29,7 @@ he or she will get a session-token and next time when user opens this app , no m
 login needed.A good thing is , if user doesnt want to sign up, just click demoUser 
 button,then will login automatically as a demo user.
 
-![Alt Text](app/assets/images/sessionshow.gif)
+![Alt Text](https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/sessionshow.gif)
 
 ### Search 
 
@@ -37,7 +37,7 @@ Users can search for their favorite kind of businesses, right now in database
 there is only one city: San Francisco, Input anything that cant not be found ,
 will lead user to businesses index page. 
 
-![Alt Text](app/assets/images/searchshow.gif)
+![Alt Text](https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/searchshow.gif)
 
 ### write review
 
@@ -46,7 +46,7 @@ alert tells user to log in first. After submitting the review form, it will redi
 to the business show page and the new created review will be rendered . Only the author 
 of that review have the right to delete it
 
-![Alt Text](app/assets/images/writereviewshow.gif)
+![Alt Text](https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/writereviewshow.gif)
 
 ## Code Snippets
 below is the code of loginForm presentative component , if sign in with wrong 
