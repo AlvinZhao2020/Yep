@@ -21,7 +21,7 @@ On homepage. There are
 * footer :Links to developer's github, linkedin 
 
 
-![Alt Text](https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/homepageshow.gif)
+![Alt Text](https://active-storage-yep-dev.s3-us-west-1.amazonaws.com/2bm6f6d6Y3aVsmVwvnwsZRmW)
 
 ### Sign UP / LOG IN
 User needs to log in before leaving a review for one business, when user logged in
