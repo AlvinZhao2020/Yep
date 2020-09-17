@@ -8,7 +8,7 @@ const Footer = () => (
           <a href="/">
             <i className="fas fa-home"></i>
           </a>
-          <a href="https://github.com/AlvinZhao2020/yep/wiki" target="_blank">
+          <a href="https://github.com/AlvinZhao2020/Yelp" target="_blank">
             <i className="fab fa-github-square"></i>
           </a>
           <a
@@ -23,7 +23,7 @@ const Footer = () => (
         </div>
       </div>
       <div>
-        <div className="footer-img"/>
+        <div className="footer-img" />
       </div>
     </div>
   </div>
