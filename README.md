@@ -21,7 +21,7 @@ On homepage. There are
 * footer :Links to developer's github, linkedin 
 
 
-![Alt Text](app/assets/images/readme_gifs/homepageshow.gif)
+![Alt Text](https://github.com/AlvinZhao2020/Yelp/blob/master/app/assets/images/readme_gofs/homepageshow.gif)
 
 ### Sign UP / LOG IN
 User needs to log in before leaving a review for one business, when user logged in
