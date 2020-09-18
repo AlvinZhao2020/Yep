@@ -29,7 +29,7 @@ he or she will get a session-token and next time when user opens this app , no m
 login needed.A good thing is , if user doesnt want to sign up, just click demoUser 
 button,then will login automatically as a demo user.
 
-![Alt Text](app/assets/images/readme_gifs/sessionshow.gif)
+![Alt Text](https://github.com/AlvinZhao2020/Yelp/blob/master/app/assets/images/readme_gofs/sessionshow.gif)
 
 ### Search 
 
@@ -37,7 +37,7 @@ Users can search for their favorite kind of businesses, right now in database
 there is only one city: San Francisco, Input anything that cant not be found ,
 will lead user to businesses index page. 
 
-![Alt Text](app/assets/images/readme_gifs/searchshow.gif)
+![Alt Text](https://github.com/AlvinZhao2020/Yelp/blob/master/app/assets/images/readme_gofs/searchshow.gif)
 
 ### write review
 
@@ -46,7 +46,7 @@ alert tells user to log in first. After submitting the review form, it will redi
 to the business show page and the new created review will be rendered . Only the author 
 of that review have the right to delete it
 
-![Alt Text](app/assets/images/readme_gifs/writereviewshow.gif)
+![Alt Text](https://github.com/AlvinZhao2020/Yelp/blob/master/app/assets/images/readme_gofs/writereviewshow.gif)
 
 ## Code Snippets
 below is the code of loginForm presentative component , if sign in with wrong 
